@@ -29,8 +29,7 @@ fn main() -> io::Result<()> {
     println!("Pressione Enter para sair...");
     io::stdout().flush().unwrap(); // Garante que "Pressione Enter para sair..." seja mostrado antes da entrada
     io::stdin().read_line(&mut String::new()).unwrap();
-
-
+    Ok(())
 }
 
 fn quick_sort(arr: &mut [i32]) {
